@@ -53,7 +53,7 @@ if (container) {
                 links.forEach(link => {
                   const linkPath = link.getAttribute('href').split('/').pop(); // Extract file name
                   if (linkPath === currentPath) {
-                    link.classList.add('active'); // Add 'active' class
+                    link.classList.add('active') !important; // Add 'active' class
                   }
                 });
               });
